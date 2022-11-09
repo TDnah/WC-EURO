@@ -1,0 +1,11 @@
+<script language="vbscript" runat="server">
+<!--#INCLUDE FILE="config.asp" -->
+Sub Session_OnStart
+    
+End Sub
+
+Sub Session_OnEnd
+
+End Sub
+
+</script>

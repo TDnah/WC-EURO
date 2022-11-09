@@ -1,0 +1,18 @@
+stm_bm(["menu123c",850,"","blank.gif",0,"","",0,0,250,0,1000,1,0,0,"","",0,0,1,2,"default","hand","http://en.euro2008.uefa.com/"],this);
+stm_bp("p0",[0,4,0,0,1,3,0,0,100,"",-2,"",-2,50,0,0,"#999999","#FFCC99","",3,0,0,"#000000"]);
+stm_ai("p0i0",[0,"WebSite Link","","",-1,-1,0,"#","_self","","","","",0,0,0,"","",0,0,0,0,1,"#CC9900",1,"#FFFFF7",1,"","",0,0,1,1,"#CC9900","#CC9900","#666666","#000000","bold 8pt Arial","bold 8pt Arial",0,0],100,0);
+stm_bp("p1",[1,4,0,1,0,4,0,0,100,"",-2,"",-2,100,0,0,"#666666","#CC8100","",3,1,1,"#965F00"]);
+stm_aix("p1i0","p0i0",[0,"EURO","","",-1,-1,0,"http://en.euro2008.uefa.com/","_self","","","","",0,0,0,"","",0,0,0,0,1,"#FFFFF7",1,"#FFCC99",0,"","",3,1,0,0,"#0099CC","#000000","#FFFFFF","#000000","bold 7pt Verdana","bold 7pt Verdana"],98,0);
+stm_ai("p1i1",[6,1,"#965F00","",-1,-1,0]);
+stm_aix("p1i2","p1i0",[0,"VNExpree","","",-1,-1,0,"http://vnexpress.net/Vietnam/The-thao/"],98,0);
+stm_aix("p1i3","p1i1",[]);
+stm_aix("p1i4","p1i0",[0,"Live Score","","",-1,-1,0,"http://livescore.com/"],98,0);
+stm_aix("p1i5","p1i1",[]);
+stm_aix("p1i6","p1i0",[0,"Asianbookie","","",-1,-1,0,"http://www.asianbookie.com/index.cfm?league=4&tz=7"],98,0);
+stm_aix("p1i7","p1i1",[]);
+stm_aix("p1i8","p1i0",[0,"Yahoo Sport","","",-1,-1,0,"http://sports.yahoo.com/m/world"],98,0);
+stm_aix("p1i9","p1i1",[]);
+stm_ep();
+stm_ep();
+stm_sc(1,["transparent","transparent","","",3,3,0,0,"#FFFFF7","#000000","","arrow_01.gif",7,7,0,"","arrow_02.gif",7,7,0,1,190]);
+stm_em();
