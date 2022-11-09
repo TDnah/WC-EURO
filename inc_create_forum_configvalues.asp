@@ -37,7 +37,7 @@
 strDummy = SetConfigValue(1,"STRVERSION", strNewVersion)
 strDummy = SetConfigValue(1,"STRFORUMTITLE","Snitz Forums 2000")
 strDummy = SetConfigValue(1,"STRCOPYRIGHT","2000-06 Snitz Communications")
-strDummy = SetConfigValue(1,"STRTITLEIMAGE","logo_snitz_forums_2000.gif")
+strDummy = SetConfigValue(1,"STRTITLEIMAGE","logo_snitz_forums.gif")
 strDummy = SetConfigValue(1,"STRHOMEURL","../")
 strDummy = SetConfigValue(1,"STRFORUMURL","http://www.yourdomain.com/forum/")
 strDummy = SetConfigValue(1,"STRAUTHTYPE","db")

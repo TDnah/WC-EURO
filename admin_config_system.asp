@@ -145,7 +145,7 @@ else
 			"              <tr valign=""middle"">" & vbNewLine & _
 			"                <td bgColor=""" & strPopUpTableColor & """ align=""right""><font face=""" & strDefaultFontFace & """ size=""" & strDefaultFontSize & """><b>Title Image Location:</b>&nbsp;</font></td>" & vbNewLine & _
 			"                <td bgColor=""" & strPopUpTableColor & """>" & vbNewLine & _
-			"                <input type=""text"" name=""strTitleImage"" size=""30"" value=""" & chkExistElse(strTitleImage,"logo_snitz_forums_2000.gif") & """>" & vbNewLine & _
+			"                <input type=""text"" name=""strTitleImage"" size=""30"" value=""" & chkExistElse(strTitleImage,"logo_snitz_forums.gif") & """>" & vbNewLine & _
 			"                <a href=""JavaScript:openWindow3('pop_config_help.asp?mode=system#titleimage')"">" & getCurrentIcon(strIconSmileQuestion,"","") & "</a>&nbsp;</td>" & vbNewLine & _
 			"              </tr>" & vbNewLine & _
 			"              <tr valign=""middle"">" & vbNewLine & _
