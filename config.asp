@@ -48,7 +48,7 @@ strDBType = "access"
 'strDBType = "mysql"
 
 '## Make sure to uncomment one of the strConnString lines and edit it so that it points to where your database is!
-strConnString = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" & Server.MapPath(".") & "../../Data/Data.mdb" '## MS Access 2000 using virtual path
+strConnString = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" & Server.MapPath(".") & "../../wwwroot/Data/Data.mdb" '## MS Access 2000 using virtual path
 'strConnString = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" & Server.MapPath("/USERNAME/db/snitz_forums_2000.mdb") '## MS Access 2000 on Brinkster
 'strConnString = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=c:\inetpub\db\snitz_forums_2000.mdb" '## MS Access 2000
 'strConnString = "DRIVER={Microsoft Access Driver (*.mdb)}; DBQ=" & Server.MapPath("snitz_forums_2000.mdb") '## MS Access 97 using virtual path

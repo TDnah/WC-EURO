@@ -126,6 +126,7 @@ if strAuthType = "nt" then
 end if
 Response.Write	"                <LI><span class=""spnMessageText""><a href=""admin_config_members.asp"">Member Details Configuration</a></span></LI>" & vbNewLine & _
 		"                <LI><span class=""spnMessageText""><a href=""admin_config_ranks.asp"">Ranking Configuration</a></span></LI>" & vbNewLine & _
+		"                <LI><span class=""spnMessageText""><a href=""admin_update_data.asp"">Update data</a></span></LI>" & vbNewLine & _
 		"                <LI><span class=""spnMessageText""><a href=""admin_config_datetime.asp"">Server Date/Time Configuration</a></span></LI>" & vbNewLine & _
 		"                <LI><span class=""spnMessageText""><a href=""admin_config_email.asp"">Email Server Configuration</a></span></LI>" & vbNewLine & _
 		"                <LI><span class=""spnMessageText""><a href=""admin_config_colors.asp"">Font/Table Color Code Configuration</a></span></LI>" & vbNewLine & _
