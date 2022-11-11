@@ -1,2 +1,0 @@
-# WC-EURO
-WC-EURO
