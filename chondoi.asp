@@ -70,7 +70,7 @@
 			<td align="center"><input id="radio" type="radio" name="SelectedTeam<%=i%>" value="<%=RS.Fields("Team2")%>" checked></td>
 		<%else%>
 			<td align="center"><input id="radio" type="radio" name="SelectedTeam<%=i%>" value="<%=RS.Fields("Team2")%>"></td>
-<%end if%> 
+		<%end if%> 
 		<td><%=RS.Fields("Team2Name")%></td>
 		<td align="center"><%=RS.Fields("Ratio")%></td>
 		<td align="right"><%=RS.Fields("Matchs.Win")%></td>

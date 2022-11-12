@@ -139,7 +139,7 @@ Response.Write	"                      Not a member?<br />"
 if strProhibitNewMembers = "1" then
 	Response.Write	"<font size=""" & strFooterFontSize & """ color=""" & strHiLiteFontColor & """>The Administrator has turned off Registration for this forum.<br />Only registered members are able to log in. Please contact nhdung@yahoo.com</font></font></td>" & vbNewLine
 else
-	Response.Write	"<acronym title=""Click here to register.""><span class=""spnMessageText""><a href=""register.asp""" & dWStatus("Click here to register.") & ">Register Here!</a><br /><font color=red>(note: You can not register after 12/6/2021)</span></acronymn></font></font></td>" & vbNewLine
+	Response.Write	"<acronym title=""Click here to register.""><span class=""spnMessageText""><a href=""register.asp""" & dWStatus("Click here to register.") & ">Register Here!</a><br /><font color=red>()</span></acronymn></font></font></td>" & vbNewLine
 end if
 Response.Write	"                    </tr>" & vbNewLine & _
 		"                  </table>" & vbNewLine & _

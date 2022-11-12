@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Language" content="en-us">
 <meta name="GENERATOR" content="Microsoft FrontPage 6.0">
 <meta name="ProgId" content="FrontPage.Editor.Document">
-<title>Chon doi</title>
+<title>Cap nhat ty so</title>
 <style type="text/css">
 <!--
 .TieuDe {color: #FFFF00;
@@ -40,14 +40,13 @@
 	<th colSpan="2"><p align="center"><font color="white">Đội 1</th>
 	<th colSpan="2"><p align="center"><font color="white">Đội 2</th>
 	<th>Tỷ số chấp</th>
-	<th> Thắng </th>
-	<th> Hòa </th>
-	<th> Thua </th>
+	<th>T1</th>
+	<th>T2</th>
   </tr>
   <%
   Dim Conn, RS, SQL
   dim check
-  SQL = "SELECT * FROM qMatchsToday WHERE UserID='" & Session("UserID") & "' ORDER BY MatchID"
+  SQL = "SELECT * FROM qMatchsInfo"
   Set Conn = Server.CreateObject("ADODB.Connection")
   Conn.Open strConnString
   Set RS = Server.CreateObject("ADODB.Recordset")
@@ -59,20 +58,12 @@
 <%Do while not RS.EOF%>
 	<tr>
 		<td align="center"><%=RS.Fields("MatchID")%></td>
-		<td><%=day(RS.Fields("Matchs.Date")) & "/" & month(RS.Fields("Matchs.Date")) & "/" & year(RS.Fields("Matchs.Date")) & " " & FormatDateTime(RS.Fields("Matchs.Date"),3)%></td>
+		<td><%=day(RS.Fields("Date")) & "/" & month(RS.Fields("Date")) & "/" & year(RS.Fields("Date")) & " " & FormatDateTime(RS.Fields("Date"),3)%></td>
         
-        <%if RS.Fields("TeamID")=RS.Fields("Team1") then %>
-			<td align="center"><%=RS.Fields("Team1")%></td>
-		<%else%>
-			<td align="center"><%=RS.Fields("Team1")%></td>
-		<%end if%>
+        <td align="center"><%=RS.Fields("Team1")%></td>
 		<td><%=RS.Fields("Team1Name")%></td>
 
-		<%if RS.Fields("TeamID")=RS.Fields("Team2") then %>
-			<td align="center"><%=RS.Fields("Team2")%></td>
-		<%else%>
-			<td align="center"><%=RS.Fields("Team2")%></td>
-        <%end if%> 
+		<td align="center"><%=RS.Fields("Team2")%></td>
 		<td><%=RS.Fields("Team2Name")%></td>
 
         <td><%=RS.Fields("pScore1")%></td>
@@ -89,10 +80,6 @@
         <%if RS.Fields("pRatio")=RS.Fields("Ratio") then %>
             <td align="center"><input id="ratio" type="number" name="InputRatio<%=i%>" value="<%=RS.Fields("Ratio")%>"></td>
         <%end if%>
-
-		<td align="right"><%=RS.Fields("Matchs.Win")%></td>
-		<td align="right"><%=RS.Fields("Matchs.Draw")%></td>
-		<td align="right"><%=RS.Fields("Matchs.Lose")%></td>
 	</tr>
 	<input type="hidden" id="text1" name="MatchID<%=i%>" Value="<%=RS.Fields("MatchID")%>">
 	<tr>
@@ -104,7 +91,8 @@
 <table width="100%">
 <tr>
   <td align="center">
-  <input type="submit" value="  Chọn  " id="submit1" name="submit1"></td>
+  <input type="submit" value="  Submit  " id="submit1" name="submit1"></td>
+  <input type="cancel" value="  Submit  " id="submit1" name="submit1"></td>
   </td>
 </tr>
 </table>

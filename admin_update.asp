@@ -22,23 +22,19 @@
       convDate = DateAdd("h", 14, convDate)
       Set Conn = Server.CreateObject("ADODB.Connection")
 	  Conn.Open strConnString
-	  UserID=session("UserID") 
+	  UserID=session("UserID")
 	  for i=1 to Request.Form.count \ 2
-        pScore1=Request.Form("InputScore1" & i)
-        pScore2=Request.Form("InputScore2" & i)
-        pRatio=Request.Form("InputRatio" & i)
-        if User_ID = "admin"
-            if TeamID<>"" then
-                MatchID=Request.Form("MatchID" & i)
-                sCriteria="TeamID<>'" & TeamID & "' And MatchID=" & MatchID & " AND UserID='" & UserID & "'"
-                sSQL="Update Games SET Score1='" & pScore1 & "', Score2='" & pScore2 &"', Ratio='" & pRatio &"', UpdatedDate='" & convDate & "' WHERE " & sCriteria  
-                conn.execute sSQL,RecAffected
-                if RecAffected > 0 then
-                    Response.Write("<H3>Game " & i & ": Updated successfully</H3>")
-                end if
-            end if
-                next
-        end   
+        pScore1=Request.Form("InputScore1" & pS1)
+        pScore2=Request.Form("InputScore2" & pS2)
+        pRatio=Request.Form("InputRatio" & pR)
+        MatchID=Request.Form("MatchID" & i)
+        sCriteria="MatchID='" & MatchID & "'"
+        sSQL="Update Matchs SET Score1='" & pScore1 & "', Score2='" & pScore2 &"', Ratio='" & pRatio &"' WHERE " & sCriteria  
+        conn.execute sSQL,RecAffected
+        if RecAffected > 0 then
+            Response.Write("<H3>Game " & i & ": Updated successfully</H3>")
+        end if
+        next  
 	   Response.Redirect("Results.asp")
 %>
 

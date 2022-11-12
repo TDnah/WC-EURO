@@ -724,6 +724,7 @@ stm_aix("p0i2","p0i1",[0,"Chọn đội","","",-1,-1,0,"chondoi.asp"],90,23);
 stm_aix("p0i3","p0i1",[0,"Thông tin chọn đội  ","","",-1,-1,0,"Results.asp"],90,23);
 stm_aix("p0i4","p0i1",[0,"Bảng phong thần  ","","",-1,-1,0,"ResultsAll.asp"],90,23);
 stm_aix("p0i5","p0i1",[0,"Thành tích cá nhân  ","","",-1,-1,0,"ResultsAllRev.asp"],90,23);
+stm_aix("p0i2","p0i1",[0,"Cập nhật tỷ số","","",-1,-1,0,"admin_update_data.asp"],90,23);
 //stm_aix("p0i6","p0i1",[0,"Liên kết","","",-1,-1,0,"#","_self","","","060420icon.gif","060420icon1.gif",20,25,0,"060420arrow.gif","060420arrow1.gif",28,5],110,23);
 //stm_bp("p1",[1,4,0,0,3,0,18,0,100,"",-2,"",-2,80,0,0,"#799BD8","#0B3949","",3,1,1,"#000000"]);
 //stm_aix("p1i0", "p0i0", [0, " Trang chủ Worlcup 2010", "", "", -1, -1, 0, "http://www.fifa.com/worldcup/", "_blank", "", "", "060420icon3.gif", "060420icon2.gif", 18, 16, 0, "", "", 0, 0, 0, 0, 1, "#FFFFF7", 1, "#680000", 0, "", "", 3, 0, 1, 1, "#FFFFCC", "#CCCC00", "#00FFFF", "#FFFF00", "bold 8pt Verdana", "bold 8pt Verdana"], 200, 18);
