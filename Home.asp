@@ -27,7 +27,7 @@
 </div>
 <h2 align="justify">Để thêm phần hào hứng khi xem bóng đá và trổ tài dự đóan kết 
     quả các trận đấu. Đồng thời bỏ ống chút bạc lẻ hằng ngày để có được bữa nhậu 
-    hoành tráng. BTC xin mời anh/em tham gia chương trình &quot;Vui cùng Worl Cup 2022&quot;.</h2>
+    hoành tráng. BTC xin mời anh/em tham gia chương trình &quot;Vui cùng World Cup 2022&quot;.</h2>
 <p align="justify"><strong><span lang="en-us"><font color="#FF0000" size="4">Tiêu chí khi tham gia chương trình</font></span><font color="#FF0000" size="4">:</font> </strong></p>
 <ul>
   <li>
