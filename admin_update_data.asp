@@ -40,8 +40,8 @@
 	<th colSpan="2"><p align="center"><font color="white">Đội 1</th>
 	<th colSpan="2"><p align="center"><font color="white">Đội 2</th>
 	<th>Tỷ số chấp</th>
-	<th>T1</th>
-	<th>T2</th>
+	<th>Tỷ số 1</th>
+	<th>Tỷ số 2</th>
   </tr>
   <%
   Dim Conn, RS, SQL
@@ -58,19 +58,14 @@
 	<%Do while not RS.EOF%>
 		<tr>
 			<td align="center"><%=RS.Fields("MatchID")%></td>
-			<td><%=day(RS.Fields("Date")) & "/" & month(RS.Fields("Date")) & "/" & year(RS.Fields("Date")) & " " & FormatDateTime(RS.Fields("Date"),3)%></td>
-			
+			<td><%=day(RS.Fields("Matchs.Date")) & "/" & month(RS.Fields("Matchs.Date")) & "/" & year(RS.Fields("Matchs.Date")) & " " & FormatDateTime(RS.Fields("Matchs.Date"),3)%></td>		
 			<td align="center"><%=RS.Fields("Team1")%></td>
 			<td><%=RS.Fields("Team1Name")%></td>
-
 			<td align="center"><%=RS.Fields("Team2")%></td>
 			<td><%=RS.Fields("Team2Name")%></td>
-
-			<td align="center"><input id="score1" type="number" name="InputScore1<%=i%>" value="<%=RS.Fields("Score1")%>"></td>
-
-			<td align="center"><input id="score2" type="number" name="InputScore2<%=i%>" value="<%=RS.Fields("Score2")%>"></td>
-
-			<td align="center"><input id="ratio" type="number" name="InputRatio<%=i%>" value="<%=RS.Fields("Ratio")%>"></td>
+			<td align="right"><input id="ratio" type="number" name="InputRatio<%=i%>" value="<%=RS.Fields("Matchs.Ratio")%>"></td>
+			<td align="right"><input id="score1" type="number" name="InputScore1<%=i%>" value="<%=RS.Fields("Matchs.Score1")%>"></td>
+			<td align="right"><input id="score2" type="number" name="InputScore2<%=i%>" value="<%=RS.Fields("Matchs.Score2")%>"></td>
 		</tr>
 		<input type="hidden" id="text1" name="MatchID<%=i%>" Value="<%=RS.Fields("MatchID")%>">
 		<tr>

@@ -15,27 +15,25 @@
 <!--#INCLUDE FILE="Gameheader.asp"-->
 
 <%
-      
-	  Dim Conn, sSQL, MatchID, UserID, TeamID, pScore1, pScore2, pRatio, sCriteria, RecAffected
+	  Dim Conn, sSQL, MatchID, UserID, TeamID, pScore1, pScore2, pRatio, RecAffected, i
 	  Dim convDate
       convDate = now()
       convDate = DateAdd("h", 14, convDate)
       Set Conn = Server.CreateObject("ADODB.Connection")
 	  Conn.Open strConnString
 	  UserID=session("UserID")
-	  for i=1 to Request.Form.count \ 2
-        pScore1=Request.Form("InputScore1" & pS1)
-        pScore2=Request.Form("InputScore2" & pS2)
-        pRatio=Request.Form("InputRatio" & pR)
+      for i=1 to Request.Form.count \ 4
         MatchID=Request.Form("MatchID" & i)
-        sCriteria="MatchID='" & MatchID & "'"
-        sSQL="Update Matchs SET Score1='" & pScore1 & "', Score2='" & pScore2 &"', Ratio='" & pRatio &"' WHERE " & sCriteria  
+        pRatio=Request.Form("InputRatio" & i)
+        pScore1=Request.Form("InputScore1" & i)
+        pScore2=Request.Form("InputScore2" & i)
+        sSQL="Update Matchs set Ratio=" & pRatio & ", Score1=" & pRatio & ", Score2=" & pRatio & " WHERE MatchID=" & MatchID & "" 
         conn.execute sSQL,RecAffected
         if RecAffected > 0 then
             Response.Write("<H3>Game " & i & ": Updated successfully</H3>")
         end if
-        next  
-	   Response.Redirect("Results.asp")
+      next
+      Response.Redirect("Results.asp")
 %>
 
 </body>
