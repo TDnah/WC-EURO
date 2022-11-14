@@ -38,13 +38,16 @@
       Số tiền này được liệt kê trong các mục "Lịch thi đấu", "Chọn đội", "Thông tin chọn đội" và cũng được quyết định bằng cách biểu quyết theo số đông.</strong></font></p>
   </li>  
   <li>
-    <p align="justify"><font color="#0000FF"><strong>Phải chọn đội trước khi  trận đấu diễn ra. </strong></font></p>
+    <p align="justify"><font color="#0000FF"><strong>Phải chọn đội trước khi trận đấu diễn ra ít nhất 1h. </strong></font></p>
   </li>
   <li>
     <p align="justify"><font color="#0000FF"><strong>Tỷ lệ chấp sẽ được cập nhật trước 12h trưa cùng ngày và được lấy theo số đông. </strong></font></p>
   </li>
   <li>
     <p align="justify"><font color="#0000FF"><strong>Nếu giữa chừng số tiền thu được quá nhiều sẽ tổ chức một bữa đờ mi nhậu </strong></font><strong></strong></p>
+  </li>
+  <li>
+    <p align="justify"><font color="#0000FF"><strong>Kết quả thi đấu hoặc đội đấu (từ Tứ kết) sẽ được cập nhật vào 12h trưa. </strong></font></p>
   </li>
 </ul>
 <p><font color="#FF0000" size="4"><b>Qui ước thể hiện tỷ số chấp:</b></font></p>
