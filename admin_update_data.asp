@@ -73,11 +73,7 @@
 			<td align="right"><input id="win" type="number" name="InputWin<%=i%>" value="<%=RS.Fields("Win")%>"></td>
 			<td align="right"><input id="draw" type="number" name="InputDraw<%=i%>" value="<%=RS.Fields("Draw")%>"></td>
 			<td align="right"><input id="lose" type="number" name="InputLose<%=i%>" value="<%=RS.Fields("Lose")%>"></td>
-			<%if RS.Fields("Note")="YES" then %>
-				<td align="right"><input id="check" type="checkbox" name="InputCheck<%=i%>" value="<%=RS.Fields("Note")%> checked"></td>
-			<%else%>
-				<td align="right"><input id="check" type="checkbox" name="InputCheck<%=i%>" value="<%=RS.Fields("Note")%>"></td>
-			<%end if%>
+			<td align="right"><input id="desc" type="text" name="InputDesc<%=i%>" value="<%=RS.Fields("Description")%>"></td>
 		</tr>
 		<input type="hidden" id="text1" name="MatchID<%=i%>" Value="<%=RS.Fields("MatchID")%>">
 		<tr>
