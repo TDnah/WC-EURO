@@ -42,6 +42,10 @@
 	<th>Tỷ số chấp</th>
 	<th>Tỷ số 1</th>
 	<th>Tỷ số 2</th>
+	<th>Thắng</th>
+	<th>Hoà</th>
+	<th>Thua</th>
+	<th>Đã đá</th>
   </tr>
   <%
   Dim Conn, RS, SQL
@@ -63,9 +67,17 @@
 			<td><%=RS.Fields("Team1Name")%></td>
 			<td align="center"><%=RS.Fields("Team2")%></td>
 			<td><%=RS.Fields("Team2Name")%></td>
-			<td align="right"><input id="ratio" type="number" name="InputRatio<%=i%>" value="<%=RS.Fields("Matchs.Ratio")%>"></td>
-			<td align="right"><input id="score1" type="number" name="InputScore1<%=i%>" value="<%=RS.Fields("Matchs.Score1")%>"></td>
-			<td align="right"><input id="score2" type="number" name="InputScore2<%=i%>" value="<%=RS.Fields("Matchs.Score2")%>"></td>
+			<td align="center"><input id="ratio" type="number" step=any name="InputRatio<%=i%>" value="<%=RS.Fields("Matchs.Ratio")%>"></td>
+			<td align="center"><input id="score1" type="number" name="InputScore1<%=i%>" value="<%=RS.Fields("Matchs.Score1")%>"></td>
+			<td align="center"><input id="score2" type="number" name="InputScore2<%=i%>" value="<%=RS.Fields("Matchs.Score2")%>"></td>
+			<td align="right"><input id="win" type="number" name="InputWin<%=i%>" value="<%=RS.Fields("Win")%>"></td>
+			<td align="right"><input id="draw" type="number" name="InputDraw<%=i%>" value="<%=RS.Fields("Draw")%>"></td>
+			<td align="right"><input id="lose" type="number" name="InputLose<%=i%>" value="<%=RS.Fields("Lose")%>"></td>
+			<%if RS.Fields("Note")="YES" then %>
+				<td align="right"><input id="check" type="checkbox" name="InputCheck<%=i%>" value="<%=RS.Fields("Note")%> checked"></td>
+			<%else%>
+				<td align="right"><input id="check" type="checkbox" name="InputCheck<%=i%>" value="<%=RS.Fields("Note")%>"></td>
+			<%end if%>
 		</tr>
 		<input type="hidden" id="text1" name="MatchID<%=i%>" Value="<%=RS.Fields("MatchID")%>">
 		<tr>
