@@ -59,7 +59,7 @@
             </tr>
             <%
             Dim Conn, RS, SQL
-            SQL = "SELECT * FROM qTeams WHERE Description Is not null ORDER BY Description"
+            SQL = "SELECT * FROM qTeams WHERE Description Is not null ORDER BY Description, TeamID"
             Set Conn = Server.CreateObject("ADODB.Connection")
             Conn.Open strConnString
             Set RS = Server.CreateObject("ADODB.Recordset")
@@ -91,10 +91,10 @@
             <tr>
                 <th>Trận</th>
                 <th>Ngày giờ </th>
-                <th colSpan="2"><p align="center"><font color="white">Đội 1</th>
-                <th colSpan="2"><p align="center"><font color="white">Đội 2</th>
-                <th colSpan="2"><p align="center"><font color="white">Cập nhật đội 1</th>
-                <th colSpan="2"><p align="center"><font color="white">Cập nhật đội 2</th>
+                <th colSpan="2"><p align="center">Đội 1</th>
+                <th colSpan="2"><p align="center">Đội 2</th>
+                <th colSpan="2"><p align="center">Cập nhật đội 1</th>
+                <th colSpan="2"><p align="center">Cập nhật đội 2</th>
             </tr>
             <%
                 SQL = "SELECT * FROM qMatchsInfo WHERE MatchID>=49 ORDER BY MatchID"
