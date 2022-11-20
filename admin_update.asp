@@ -38,7 +38,6 @@
 				Response.Write("<H3>Game " & sSQL & ": Updated successfully</H3>")
 			end if
     next
-    Response.Redirect("ResultsAll.asp")
 %>
 
 </body>
