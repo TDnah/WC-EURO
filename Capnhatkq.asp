@@ -19,7 +19,6 @@
 	  Dim Conn, sSQL, MatchID, UserID, TeamID, sCriteria, RecAffected
 	  Dim convDate
       convDate = now()
-      convDate = DateAdd("h", 14, convDate)
       Set Conn = Server.CreateObject("ADODB.Connection")
 	  Conn.Open strConnString
 	  UserID=session("UserID") 
