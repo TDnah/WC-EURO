@@ -19,7 +19,6 @@
 	  Dim Conn, sSQL, MatchID, UserID, TeamID, sCriteria, RecAffected
 	  Dim convDate
       convDate = now()
-      convDate = DateAdd("h", 14, convDate)
       Set Conn = Server.CreateObject("ADODB.Connection")
 	  Conn.Open strConnString
 	  UserID=session("UserID") 
@@ -27,7 +26,7 @@
 		TeamID=Request.Form("SelectedTeam" & i)
 		if TeamID<>"" then
 			MatchID=Request.Form("MatchID" & i)
-			sCriteria="TeamID<>'" & TeamID & "' And MatchID=" & MatchID & " AND UserID='" & UserID & "' AND MatchID IN (SELECT MatchID FROM Matchs WHERE Date>Now()+#12/30/1899 14:0:0#)"
+			sCriteria="TeamID<>'" & TeamID & "' And MatchID=" & MatchID & " AND UserID='" & UserID & "' AND MatchID IN (SELECT MatchID FROM Matchs WHERE Date>Now()+#12/30/1899 01:0:0#)"
 			sSQL="Update Games SET TeamID='" & TeamID & "', UpdatedDate='" & convDate & "' WHERE " & sCriteria 
 			conn.execute sSQL,RecAffected
 			if RecAffected > 0 then
