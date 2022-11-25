@@ -737,7 +737,7 @@ stm_em();
 //-->
 </script>
 <div align="right">
-  <audio controls autoplay src="\Soundtrack\wc2022.mp3">
+  <audio controls autoplay loop src="\Soundtrack\wc2022.mp3">
   </audio>
 </div>
 </span>
