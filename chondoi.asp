@@ -47,7 +47,7 @@
   <%
   Dim Conn, RS, SQL
   dim check
-  SQL = "SELECT * FROM qMatchsToday WHERE UserID='" & Session("UserID") & "' ORDER BY MatchID"
+  SQL = "SELECT * FROM qMatchsToday WHERE UserID='" & Session("UserID") & "' ORDER BY Matchs.Date ASC, MatchID"
   Set Conn = Server.CreateObject("ADODB.Connection")
   Conn.Open strConnString
   Set RS = Server.CreateObject("ADODB.Recordset")
