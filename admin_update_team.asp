@@ -97,7 +97,7 @@
                 <th colSpan="2"><p align="center">Cập nhật đội 2</th>
             </tr>
             <%
-                SQL = "SELECT * FROM qMatchsInfo WHERE MatchID>=49 ORDER BY MatchID"
+                SQL = "SELECT * FROM qMatchsInfo WHERE MatchID>=1 ORDER BY MatchID"
                 Set Conn = Server.CreateObject("ADODB.Connection")
                 Conn.Open strConnString
                 Set RS = Server.CreateObject("ADODB.Recordset")
@@ -105,7 +105,7 @@
             %>
 
         <form METHOD="post" ACTION="admin_update_match.asp">
-            <%i=49%>
+            <%i=1%>
             <%Do while not RS.EOF%>
                 <tr>
                     <td align="center"><%=RS.Fields("MatchID")%></td>
@@ -119,10 +119,10 @@
                         <p align="center"><%=RS.Fields("Team2Name")%></p>
                     </td>
                     <td colSpan="2" align="center">
-                        <input id="team1" type="text" style="text-transform: uppercase;" name="InputTeam1<%=i%>" value="<%=RS.Fields("Team1")%>">
+                        <input id="team1" type="text" style="text-transform: uppercase;" name="InputTeam1<%=i%>" value="<%=RS.Fields("Team1Name")%>">
                     </td>
                     <td colSpan="2" align="center">
-                        <input id="team2" type="text" style="text-transform: uppercase;" name="InputTeam2<%=i%>" value="<%=RS.Fields("Team2")%>">
+                        <input id="team2" type="text" style="text-transform: uppercase;" name="InputTeam2<%=i%>" value="<%=RS.Fields("Team2Name")%>">
                     </td>
                 </tr>
                 <input type="hidden" id="text1" name="MatchID<%=i%>" Value="<%=RS.Fields("MatchID")%>">
