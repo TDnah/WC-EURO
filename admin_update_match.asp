@@ -23,7 +23,8 @@
         MatchID=Request.Form("MatchID" & i)
         pTeam1=Request.Form("InputTeam1" & i)
         pTeam2=Request.Form("InputTeam2" & i)
-        sSQL="Update Matchs SET Team1Name='" & pTeam1 & "', Team2Name='" & pTeam2 & "' WHERE MatchID=" & MatchID & ""
+        sSQL="Update Matchs SET Team1='" & pTeam1 & "', Team2='" & pTeam2 & "' WHERE MatchID=" & MatchID & ""
+        Response.Write("<H3>Game " & sSQL & ": Updated successfully</H3>")
         conn.execute sSQL,RecAffected
         if RecAffected > 0 then
             Response.Write("<H3>Game " & sSQL & ": Updated successfully</H3>")

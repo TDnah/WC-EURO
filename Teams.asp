@@ -31,7 +31,7 @@ body {
 
   <div class="Title"><span class="TieuDe">Danh Sách Các Đội Bóng</span></div>
 <%   Dim Conn, RS, SQL
-  SQL = "SELECT TeamID,TeamName,Description FROM Teams where Description<>Null ORDER BY Description"
+  SQL = "SELECT TeamID,TeamName,Description FROM Teams where Description<>Null ORDER BY Index,TeamID"
   Set Conn = Server.CreateObject("ADODB.Connection")
   Conn.Open strConnString
   Set RS = Server.CreateObject("ADODB.Recordset")
